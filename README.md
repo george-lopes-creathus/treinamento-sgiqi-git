@@ -41,5 +41,12 @@ git merge feature/tela-login
 
 8. O senior faz o code review e aceita/rejeitar o Pull Request através da interface web (gitlab, github, bitbucket).
 
+9. Por fim, após aprovado o pull request e merge concluído para develop, podemos atualizar a nossa develop local e excluir a branch feature finalizada:
+git checkout develop
+git remote update --prune
+git branch -vv
+git pull
+git branch -D feature/tela-login
+
 ## Observações
 Sempre ter **muita atenção**, especialmente antes de executar cada comando git, para ter certeza de que está trabalhando na branch correta e no projeto correto.
