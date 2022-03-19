@@ -23,7 +23,7 @@ git push -u origin feature/tela-login
     Prepare os arquivos (stage):
 git add .
     Faça commit dos arquivos preparados:
-git commit "feat: create login screen"
+git commit -m "feat: create login screen"
     Publique o commit no repositório remoto:
 git push
 
